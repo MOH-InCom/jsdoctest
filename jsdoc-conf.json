@@ -1,0 +1,26 @@
+{
+    "tags": {
+        "allowUnknownTags": true
+    },
+    "plugins": [
+        "plugins/markdown"
+    ],    
+    "source": {
+        "include": ["src"],
+        "exclude": [
+            "node_modules"
+        ],
+        "includePattern": ".+\\.js?$"
+    },
+    "opts": {
+        "template": "node_modules/docdash",
+        "recurse": true,
+        "destination": "./docs/"
+    },
+    "docdash": {
+        "sectionOrder": [
+            "Modules"
+        ],
+        "search": true
+    }
+}
